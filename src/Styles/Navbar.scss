@@ -1,0 +1,60 @@
+@import './variables';
+
+
+@mixin  flex($direction) {
+    display: flex;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+.navbar{
+    @include flex(row);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding:1rem 2.5rem;
+    .logo{
+        width: 92px ;
+        height: 30px;
+    }
+    .inputcontainer{
+        @include flex(row);
+        width: 650px;
+        padding: .7rem 1rem;
+        background-color: #303134;
+        border-radius: 112px;
+        margin-left: 52px;
+        &:hover{
+            box-shadow: 10px 10px 10px rgba(0,0,0,.1);
+        }
+        input{
+            width: 620px;
+            padding: .4em;
+            background-color: #303134;
+            border: none;
+            color: $white;
+            font-size: 1.7rem;
+            &:focus{
+                outline: none;
+            }
+        }
+    
+    }
+}
+
+.active{
+    background-color: #303134;
+    .inputcontainer{
+        border: 1px solid #bdc1c6;
+    }
+}
+
+.mic{
+    height: 27px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.search{
+    height: 27px;
+    cursor: pointer;
+}

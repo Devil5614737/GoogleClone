@@ -1,0 +1,77 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  padding: 1rem 2.5rem;
+}
+
+.navbar .logo {
+  width: 92px;
+  height: 30px;
+}
+
+.navbar .inputcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 650px;
+  padding: .7rem 1rem;
+  background-color: #303134;
+  border-radius: 112px;
+  margin-left: 52px;
+}
+
+.navbar .inputcontainer:hover {
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .inputcontainer input {
+  width: 620px;
+  padding: .4em;
+  background-color: #303134;
+  border: none;
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+.navbar .inputcontainer input:focus {
+  outline: none;
+}
+
+.active {
+  background-color: #303134;
+}
+
+.active .inputcontainer {
+  border: 1px solid #bdc1c6;
+}
+
+.mic {
+  height: 27px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.search {
+  height: 27px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Navbar.css.map */

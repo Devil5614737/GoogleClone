@@ -1,0 +1,86 @@
+@import './reset';
+@import './variables';
+
+
+@mixin  flex($justify,$align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+
+    
+}
+
+.container{
+    width: 100vw;
+    
+    height: auto;
+    background-color: $main-color;
+
+}
+
+
+.results_container{
+    margin-top: 152px;
+    position: absolute;
+    margin-left: 182px;
+}
+
+.container{
+    .execution_time{
+        p{
+            color: #9aa0a6;
+            font-size: 1.6rem;
+        }
+    }
+}
+.video_title{
+    @include flex(unset,center );
+    margin-top: 12px;
+img{
+    height: 25px;
+}
+p{
+    font-size: 1.6rem;
+    color: $white;
+    margin-left: 7px;
+}
+}
+
+.videos{
+    .video_image{
+        width: 652px;
+        height: 332px;
+        margin-bottom: 12px;
+    }
+}
+
+.video_link{
+    color: $link-color;
+    font-size: 1.8rem;
+  
+  
+}
+
+.links-container{
+    margin-top: 12px;
+    width: 74%;
+    .links{
+        .display_link{
+            color:$top-link;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+        .link_title{
+            color:$link-color;
+            font-size: 1.8rem;
+            text-transform: capitalize;
+            margin-bottom: 5px;
+        }
+        .link_info{
+            color:$link-info;
+            font-size: 1.6rem;
+            line-height: 1.4;
+            margin-bottom: 42px;
+        }
+    }
+}
